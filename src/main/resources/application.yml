@@ -1,0 +1,26 @@
+server:
+  port: 10001
+
+spring:
+  application:
+    name: users-api
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/myapp?serverTimezone=Asia/Seoul
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+login:
+  url:
+    path: /users/login
